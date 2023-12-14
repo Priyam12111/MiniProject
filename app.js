@@ -96,6 +96,3 @@ products.forEach((x,i)=>{
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", reveal2);
 window.addEventListener("scroll", reveal3);
-document.querySelector('#Sendmail').addEventListener("click",()=>{
-    alert("Your Email has been sent!")
-})

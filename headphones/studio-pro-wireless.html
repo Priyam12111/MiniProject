@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../photos/solo3-pink-2.png" type="image/x-icon">
+
+    <title>Studio pro wireless</title>
+</head>
+
+<body>
+    <style>
+        .ItemFullView{
+            display: flex;
+            color: white;
+            margin-left: 100px;
+            margin-right: 200px;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+
+        .itemImg{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .buyopt{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: space-evenly;
+        }
+        .buyopt h3{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: bisque;
+            color: black;
+            cursor: pointer;
+
+        }
+        .moredetail{
+            margin-top: 90px;
+        }
+
+        .moredetail *{
+            
+            border: 1px solid white;
+            padding: 5px;
+        }
+    </style>
+    <nav>
+        <img src="../photos/beatsLogo.png" alt="Beat Logo">
+        <div class="upper-right-section">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/case.html">Case</a></li>
+                <li><a href="/products.html">Products</a></li>
+            </ul>
+            <button style="color:white;"><a href="/shop.html">Shop</a></button>
+            <li style="margin-left: 10px;"><a href="../cart.html"> <i class="fa fa-shopping-bag"></i></a></li>
+
+        </div>
+    </nav>
+    <div class="ItemFullView">
+        <div class="itemImg">
+            <img src="../photos/beats-studio-pro-sandstone.jpg" alt="earbuds" width="300px">
+            <div class="buyopt">
+                <h3>Add to Cart</h3>
+                <h3>Buy</h3>
+            </div>
+        </div>
+        <div class="itemInfo">
+            <h2>Studio pro wireless noise cancelling headphone</h2>
+            <h4>Price: $349.99</h4>
+            <div class="moredetail">
+                <h4>Free Shipping and return</h4>
+                <h4>Free 3 month Subscription of Spotify</h4>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        document.querySelectorAll('.buyopt h3')[0].addEventListener('click',()=>{
+            console.log("You buy one earbud");
+            localStorage.setItem('CartBox',`${document.querySelector('.itemInfo h2').innerText}`)
+            localStorage.setItem('CartBoxPrices', `${document.querySelector('.itemInfo h4').innerText.split(" ")[1].split("<")[0].replace("$","")}`);
+            localStorage.setItem('CartBoxquant', 1);
+            localStorage.setItem('CartBoxImages', `${document.querySelector('.itemImg img').src.split("/")[4]}`);
+            document.querySelectorAll('.buyopt h3')[0].innerHTML = "<a style='color:black' href='/cart.html'>Go to Cart</a>"
+        })
+    </script>
+</body>
+
+</html>

@@ -475,3 +475,10 @@ button {
     transform: translateY(0);
     opacity: 1;
 }
+
+.subscribe-button input{
+    margin-bottom: 15px;
+    padding: 9px;
+    margin-left: 100px;
+}
+
