@@ -15,7 +15,7 @@ This project showcases a static website built using only HTML and CSS. It includ
 
 To view the project, simply visit the following link:
 
-[Project Link](https://priyam12111.github.io/MiniProject/)
+[Headphones](https://priyam12111.github.io/MiniProject/)
 
 ### Prerequisites
 
@@ -37,11 +37,3 @@ cd MiniProject
 ```bash
 open index.html
 ```
-
-MiniProject/
-│
-├── index.html          # Main HTML file
-├── styles/             
-│   ├── main.css        # Main CSS file
-│   └── responsive.css  # Responsive design CSS
-└── images/             # Folder containing images used in the website
