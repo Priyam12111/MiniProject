@@ -15,7 +15,7 @@ This project showcases a static website built using only HTML and CSS. It includ
 
 To view the project, simply visit the following link:
 
-[Headphones](https://priyam12111.github.io/MiniProject/)
+[Headphones](https://priyam12111.github.io/Miniproject-HeadsetHub/)
 
 ### Prerequisites
 
